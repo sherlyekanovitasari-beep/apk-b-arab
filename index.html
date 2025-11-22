@@ -1,4 +1,4 @@
-<!doctype doctype>
+<!doctype html>
 <html lang="id">
  <head>
   <meta charset="UTF-8">
@@ -10,8 +10,8 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
+            font-family: 'Segoe UI', 'Arabic Typesetting', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #0a2463 0%, #1e5ba8 50%, #3e8ed0 100%);
             min-height: 100%;
             overflow-x: hidden;
         }
@@ -24,7 +24,7 @@
             max-width: 480px;
             margin: 0 auto;
             min-height: 100%;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
+            background: linear-gradient(135deg, #0a2463 0%, #1e5ba8 50%, #3e8ed0 100%);
             position: relative;
             padding: 20px;
         }
@@ -43,291 +43,340 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .decorative-pattern {
+        .islamic-pattern {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 150px;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10 L60 30 L80 30 L65 45 L70 65 L50 50 L30 65 L35 45 L20 30 L40 30 Z" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            background-size: 60px;
-            opacity: 0.3;
+            height: 200px;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 2%, transparent 2%),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 2%, transparent 2%);
+            background-size: 40px 40px;
+            opacity: 0.5;
         }
         
         .header-title {
             text-align: center;
             color: #fff;
-            font-size: 32px;
+            font-size: 34px;
             font-weight: bold;
-            margin: 40px 0 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 50px 0 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
             position: relative;
             z-index: 1;
+            letter-spacing: 0.5px;
         }
         
         .subtitle {
             text-align: center;
             color: #ffd700;
-            font-size: 20px;
+            font-size: 22px;
             margin: 10px 0 30px;
-            font-weight: 600;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .learning-objectives {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 20px;
+            background: rgba(255,255,255,0.98);
+            border-radius: 25px;
+            padding: 25px;
             margin: 30px 0;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 3px solid rgba(255,215,0,0.3);
         }
         
         .learning-objectives h3 {
-            color: #1e3c72;
-            font-size: 18px;
-            margin-bottom: 15px;
+            color: #0a2463;
+            font-size: 20px;
+            margin-bottom: 18px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            font-weight: 700;
         }
         
         .learning-objectives ul {
-            color: #2a5298;
-            font-size: 14px;
-            line-height: 1.8;
-            padding-left: 20px;
+            color: #1e5ba8;
+            font-size: 15px;
+            line-height: 2;
+            padding-left: 25px;
+            font-weight: 500;
+        }
+        
+        .learning-objectives li {
+            margin-bottom: 8px;
         }
         
         .start-button {
             display: block;
-            width: 80%;
-            max-width: 300px;
-            margin: 30px auto;
-            padding: 18px 40px;
+            width: 85%;
+            max-width: 320px;
+            margin: 35px auto;
+            padding: 20px 40px;
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
             border: none;
             border-radius: 50px;
-            color: #1e3c72;
-            font-size: 22px;
-            font-weight: bold;
+            color: #0a2463;
+            font-size: 24px;
+            font-weight: 900;
             cursor: pointer;
-            box-shadow: 0 6px 20px rgba(255,215,0,0.4);
+            box-shadow: 0 8px 25px rgba(255,215,0,0.5);
             transition: all 0.3s ease;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .start-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255,215,0,0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(255,215,0,0.7);
         }
         
         .start-button:active {
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
         
         .developer-info {
             text-align: center;
-            color: rgba(255,255,255,0.8);
-            font-size: 12px;
-            margin-top: 40px;
-            line-height: 1.6;
+            color: rgba(255,255,255,0.95);
+            font-size: 13px;
+            margin-top: 45px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+        
+        .developer-info strong {
+            color: #ffd700;
+            font-size: 14px;
         }
         
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin: 30px 0;
+            gap: 18px;
+            margin: 35px 0;
         }
         
         .menu-button {
-            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+            background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(255,255,255,0.90));
             border: none;
-            border-radius: 20px;
-            padding: 25px 15px;
+            border-radius: 22px;
+            padding: 28px 18px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
             text-align: center;
+            border: 2px solid rgba(255,215,0,0.2);
         }
         
         .menu-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            border-color: rgba(255,215,0,0.5);
         }
         
         .menu-button:active {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
         
         .menu-icon {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 42px;
+            margin-bottom: 12px;
+            filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
         }
         
         .menu-text {
-            color: #1e3c72;
-            font-weight: bold;
-            font-size: 16px;
-            margin-top: 8px;
+            color: #0a2463;
+            font-weight: 800;
+            font-size: 17px;
+            margin-top: 10px;
+            letter-spacing: 0.3px;
         }
         
         .menu-subtitle {
-            color: #2a5298;
-            font-size: 12px;
-            margin-top: 4px;
+            color: #1e5ba8;
+            font-size: 13px;
+            margin-top: 6px;
+            font-weight: 600;
         }
         
         .back-button {
             position: fixed;
             top: 20px;
             left: 20px;
-            background: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.95);
             border: none;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 26px;
             transition: all 0.3s ease;
             z-index: 100;
+            color: #0a2463;
+            font-weight: bold;
         }
         
         .back-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            transform: scale(1.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            background: #ffd700;
         }
         
         .chapter-header {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 20px;
-            margin: 20px 0 30px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            background: rgba(255,255,255,0.98);
+            border-radius: 25px;
+            padding: 25px;
+            margin: 20px 0 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
             text-align: center;
+            border: 3px solid rgba(255,215,0,0.3);
         }
         
         .chapter-title {
-            color: #1e3c72;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            color: #0a2463;
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
         
         .chapter-subtitle {
-            color: #2a5298;
-            font-size: 16px;
+            color: #1e5ba8;
+            font-size: 18px;
+            font-weight: 700;
         }
         
         .content-card {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            background: rgba(255,255,255,0.98);
+            border-radius: 25px;
+            padding: 30px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,215,0,0.2);
         }
         
         .content-card h3 {
-            color: #1e3c72;
-            font-size: 20px;
-            margin-bottom: 15px;
+            color: #0a2463;
+            font-size: 22px;
+            margin-bottom: 18px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            font-weight: 800;
         }
         
         .vocab-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 20px;
+            gap: 18px;
+            margin-top: 25px;
         }
         
         .vocab-item {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border-radius: 15px;
-            padding: 15px;
+            border-radius: 20px;
+            padding: 20px 15px;
             text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(30,91,168,0.2);
+        }
+        
+        .vocab-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
         }
         
         .vocab-icon {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 52px;
+            margin-bottom: 12px;
+            filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
         }
         
         .vocab-arabic {
-            color: #1e3c72;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 8px 0;
+            color: #0a2463;
+            font-size: 20px;
+            font-weight: 900;
+            margin: 10px 0;
+            direction: rtl;
         }
         
         .vocab-meaning {
-            color: #2a5298;
-            font-size: 14px;
+            color: #1e5ba8;
+            font-size: 15px;
+            font-weight: 700;
         }
         
         .quiz-question {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            background: rgba(255,255,255,0.98);
+            border-radius: 22px;
+            padding: 28px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,215,0,0.3);
         }
         
         .question-text {
-            color: #1e3c72;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
+            color: #0a2463;
+            font-size: 19px;
+            font-weight: 800;
+            margin-bottom: 22px;
+            line-height: 1.6;
         }
         
         .option-button {
             width: 100%;
-            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
-            border: 2px solid #7fa3d1;
-            border-radius: 15px;
-            padding: 15px;
-            margin: 10px 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(227,242,253,0.9));
+            border: 3px solid #3e8ed0;
+            border-radius: 18px;
+            padding: 18px;
+            margin: 12px 0;
             cursor: pointer;
             text-align: left;
-            font-size: 16px;
-            color: #1e3c72;
+            font-size: 17px;
+            color: #0a2463;
             transition: all 0.3s ease;
+            font-weight: 600;
         }
         
         .option-button:hover {
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            transform: translateX(5px);
+            background: linear-gradient(135deg, #bbdefb, #90caf9);
+            transform: translateX(8px);
+            border-color: #1e5ba8;
         }
         
         .option-button.correct {
             background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
             border-color: #4caf50;
+            font-weight: 800;
         }
         
         .option-button.incorrect {
             background: linear-gradient(135deg, #ffcdd2, #ef9a9a);
             border-color: #f44336;
+            font-weight: 800;
         }
         
         .score-display {
             background: linear-gradient(135deg, #ffd700, #ffed4e);
-            border-radius: 15px;
-            padding: 20px;
+            border-radius: 20px;
+            padding: 25px;
             text-align: center;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+            margin: 25px 0;
+            box-shadow: 0 6px 20px rgba(255,215,0,0.5);
+            border: 3px solid rgba(255,255,255,0.5);
         }
         
         .score-text {
-            color: #1e3c72;
-            font-size: 24px;
-            font-weight: bold;
+            color: #0a2463;
+            font-size: 28px;
+            font-weight: 900;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
         }
         
         .next-button {
@@ -335,83 +384,103 @@
             width: 100%;
             background: linear-gradient(135deg, #4caf50, #66bb6a);
             border: none;
-            border-radius: 15px;
-            padding: 15px;
+            border-radius: 18px;
+            padding: 18px;
             color: white;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 20px;
+            font-weight: 900;
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 25px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76,175,80,0.4);
+            box-shadow: 0 6px 20px rgba(76,175,80,0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .next-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(76,175,80,0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(76,175,80,0.7);
         }
         
         .motivation-card {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 40px 30px;
-            margin: 50px 0;
+            background: rgba(255,255,255,0.98);
+            border-radius: 30px;
+            padding: 45px 35px;
+            margin: 60px 0;
             text-align: center;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+            border: 4px solid rgba(255,215,0,0.5);
         }
         
         .motivation-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
+            font-size: 90px;
+            margin-bottom: 25px;
+            filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.3));
         }
         
         .motivation-title {
-            color: #1e3c72;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 15px;
+            color: #0a2463;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
         
         .motivation-text {
-            color: #2a5298;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            color: #1e5ba8;
+            font-size: 19px;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            font-weight: 600;
         }
         
         .instruction-text {
-            color: #2a5298;
-            font-size: 16px;
-            line-height: 1.8;
-            margin: 15px 0;
+            color: #1e5ba8;
+            font-size: 17px;
+            line-height: 2;
+            margin: 18px 0;
+            font-weight: 500;
         }
         
         .audio-placeholder {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border-radius: 15px;
-            padding: 60px 20px;
+            border-radius: 20px;
+            padding: 65px 25px;
             text-align: center;
-            margin: 20px 0;
-            border: 3px dashed #2a5298;
+            margin: 25px 0;
+            border: 4px dashed #1e5ba8;
         }
         
         .audio-icon {
-            font-size: 64px;
-            margin-bottom: 15px;
+            font-size: 70px;
+            margin-bottom: 18px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
         }
         
         .image-placeholder {
             background: linear-gradient(135deg, #fff9c4, #fff59d);
-            border-radius: 15px;
-            padding: 80px 20px;
+            border-radius: 20px;
+            padding: 85px 25px;
             text-align: center;
-            margin: 20px 0;
-            border: 3px dashed #fbc02d;
+            margin: 25px 0;
+            border: 4px dashed #fbc02d;
         }
         
         .image-icon {
-            font-size: 80px;
-            margin-bottom: 15px;
+            font-size: 85px;
+            margin-bottom: 18px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+        }
+        
+        .placeholder-text {
+            font-weight: 800;
+            font-size: 17px;
+        }
+        
+        .placeholder-subtext {
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 8px;
         }
     </style>
   <style>@view-transition { navigation: auto; }</style>
@@ -420,7 +489,7 @@
  </head>
  <body>
   <div class="container">
-   <div class="decorative-pattern"></div><!-- Halaman Pembuka -->
+   <div class="islamic-pattern"></div><!-- Halaman Pembuka -->
    <div id="opening-page" class="page active">
     <h1 class="header-title" id="app-title">📚 Media Pembelajaran Bahasa Arab</h1>
     <p class="subtitle" id="class-level">Kelas 7 MTs</p>
@@ -456,7 +525,6 @@
       <div class="menu-icon">
        📖
       </div>
-	  <img src="mufrodat" alt="Gambar Bab 1" width="150">
       <div class="menu-text">
        BAB 2
       </div>
@@ -466,12 +534,6 @@
       <div class="menu-icon">
        📝
       </div>
-	  <video controls width="300">
-    <source src="video/ism Isyarah.mp4" type="video/mp4">
-</video>
-<video controls width="300">
-    <source src="video/mudzakar muannats.mp4" type="video/mp4">
-</video>
       <div class="menu-text">
        BAB 3
       </div>
@@ -480,7 +542,7 @@
       </div></button> <button class="menu-button" onclick="showPage('bab4')">
       <div class="menu-icon">
        🎓
-      </div><img src="mufrodat" alt="Gambar Bab 3" width="150">
+      </div>
       <div class="menu-text">
        BAB 4
       </div>
@@ -494,7 +556,7 @@
        BAB 5
       </div>
       <div class="menu-subtitle">
-       Keluargaku
+       اسراتي (Keluargaku)
       </div></button> <button class="menu-button" onclick="showPage('bab6')">
       <div class="menu-icon">
        🏫
@@ -688,15 +750,15 @@
       <div class="audio-icon">
        🔊
       </div>
-      <p style="color: #2a5298; font-weight: bold;">Audio Player</p>
-      <p style="color: #7fa3d1; font-size: 14px;">Tekan play untuk mendengarkan</p>
+      <p class="placeholder-text" style="color: #1e5ba8;">Audio Player</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Tekan play untuk mendengarkan</p>
      </div>
      <div class="image-placeholder">
       <div class="image-icon">
        🖼️
       </div>
-      <p style="color: #f57f17; font-weight: bold;">Ilustrasi Rumah</p>
-      <p style="color: #fbc02d; font-size: 14px;">Gambar akan ditampilkan di sini</p>
+      <p class="placeholder-text" style="color: #f57f17;">Ilustrasi Rumah</p>
+      <p class="placeholder-subtext" style="color: #fbc02d;">Gambar akan ditampilkan di sini</p>
      </div>
     </div>
    </div><!-- BAB 1: Latihan Soal -->
@@ -720,11 +782,11 @@
        1. Cocokkan kosakata Arab dengan artinya<br>
        2. Klik pada kartu untuk memilih<br>
        3. Temukan semua pasangan yang benar<br>
-       4. Selamat bermain! 🎉</p><button class="next-button" onclick="alert('Game akan segera dimulai!')">Mulai Game</button>
+       4. Selamat bermain! 🎉</p><button class="next-button" onclick="showGameAlert()">Mulai Game</button>
     </div>
    </div><!-- BAB 2: QAWAID -->
    <div id="bab2" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(227,242,253,0.98), rgba(187,222,251,0.95));">
      <div class="chapter-title">
       📘 BAB 2: QAWAID
      </div>
@@ -765,8 +827,8 @@
       <div class="audio-icon">
        🎥
       </div>
-      <p style="color: #2a5298; font-weight: bold;">Video Pembelajaran</p>
-      <p style="color: #7fa3d1; font-size: 14px;">Video penjelasan akan ditampilkan</p>
+      <p class="placeholder-text" style="color: #1e5ba8;">Video Pembelajaran</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Video penjelasan akan ditampilkan</p>
      </div>
     </div>
    </div><!-- BAB 2: Mudzakar & Mu'annas -->
@@ -780,13 +842,13 @@
       <div class="audio-icon">
        🎥
       </div>
-      <p style="color: #2a5298; font-weight: bold;">Video Pembelajaran</p>
-      <p style="color: #7fa3d1; font-size: 14px;">Video penjelasan akan ditampilkan</p>
+      <p class="placeholder-text" style="color: #1e5ba8;">Video Pembelajaran</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Video penjelasan akan ditampilkan</p>
      </div>
     </div>
    </div><!-- BAB 2: Latihan -->
    <div id="bab2-latihan" class="page"><button class="back-button" onclick="showPage('bab2')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(227,242,253,0.98), rgba(187,222,251,0.95));">
      <div class="chapter-title">
       ✏️ Latihan Soal BAB 2
      </div>
@@ -799,26 +861,26 @@
     <div id="bab2-quiz-container"></div>
    </div><!-- BAB 3: QAWAID -->
    <div id="bab3" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">
-     <div class="chapter-title" style="color: #880e4f;">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(187,222,251,0.98), rgba(144,202,249,0.95));">
+     <div class="chapter-title" style="color: #0d47a1;">
       📘 BAB 3: QAWAID
      </div>
-     <div class="chapter-subtitle" style="color: #ad1457;">
+     <div class="chapter-subtitle" style="color: #1565c0;">
       Tata Bahasa Lanjutan
      </div>
     </div>
-    <div class="menu-grid"><button class="menu-button" onclick="showPage('bab3-mufrodat-intro')">
+    <div class="menu-grid"><button class="menu-button" onclick="showPage('bab3-huruf-jar')">
       <div class="menu-icon">
-       📚
+       🔤
       </div>
       <div class="menu-text">
-       Mufrodat
-      </div></button> <button class="menu-button" onclick="showPage('bab3-qiraah')">
+       Huruf Jar
+      </div></button> <button class="menu-button" onclick="showPage('bab3-mubtada')">
       <div class="menu-icon">
-       📖
+       📝
       </div>
       <div class="menu-text">
-       Qira'ah
+       Mubtada Khobar
       </div></button> <button class="menu-button" onclick="showPage('bab3-latihan')" style="grid-column: span 2;">
       <div class="menu-icon">
        ✏️
@@ -827,13 +889,67 @@
        Latihan Soal
       </div></button>
     </div>
+   </div><!-- BAB 3: Huruf Jar -->
+   <div id="bab3-huruf-jar" class="page"><button class="back-button" onclick="showPage('bab3')">←</button>
+    <div class="content-card">
+     <h3>🔤 Huruf Jar</h3>
+     <p class="instruction-text"><strong>Huruf Jar</strong> adalah huruf yang menyebabkan isim sesudahnya menjadi majrur (berharakat kasrah).<br><br><strong>Huruf Jar yang sering digunakan:</strong><br>
+       • مِنْ (min) = dari<br>
+       • إِلَى (ilā) = ke<br>
+       • فِي (fī) = di, dalam<br>
+       • عَلَى ('alā) = di atas<br>
+       • بِ (bi) = dengan<br>
+       • لِ (li) = untuk, bagi<br><br><strong>Contoh:</strong><br>
+       • فِي الْبَيْتِ (fī al-baiti) = di rumah<br>
+       • مِنَ الْمَدْرَسَةِ (mina al-madrasati) = dari sekolah</p>
+     <div class="audio-placeholder">
+      <div class="audio-icon">
+       🎥
+      </div>
+      <p class="placeholder-text" style="color: #1e5ba8;">Video Pembelajaran</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Video penjelasan akan ditampilkan</p>
+     </div>
+    </div>
+   </div><!-- BAB 3: Mubtada Khobar -->
+   <div id="bab3-mubtada" class="page"><button class="back-button" onclick="showPage('bab3')">←</button>
+    <div class="content-card">
+     <h3>📝 Mubtada Khobar</h3>
+     <p class="instruction-text"><strong>Mubtada'</strong> = Subjek (yang dibicarakan)<br><strong>Khobar</strong> = Predikat (berita tentang mubtada')<br><br><strong>Rumus Dasar:</strong><br>
+       Mubtada' + Khobar = Kalimat Sempurna<br><br><strong>Contoh:</strong><br>
+       • اَلْبَيْتُ جَمِيْلٌ<br>
+       (Al-baitu jamīlun)<br>
+       Rumah itu indah<br><br>
+       • اَلْمُدَرِّسُ فِي الْفَصْلِ<br>
+       (Al-mudarrisu fī al-fashli)<br>
+       Guru di kelas</p>
+     <div class="audio-placeholder">
+      <div class="audio-icon">
+       🎥
+      </div>
+      <p class="placeholder-text" style="color: #1e5ba8;">Video Pembelajaran</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Video penjelasan akan ditampilkan</p>
+     </div>
+    </div>
+   </div><!-- BAB 3: Latihan -->
+   <div id="bab3-latihan" class="page"><button class="back-button" onclick="showPage('bab3')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(187,222,251,0.98), rgba(144,202,249,0.95));">
+     <div class="chapter-title" style="color: #0d47a1;">
+      ✏️ Latihan Soal BAB 3
+     </div>
+    </div>
+    <div class="score-display">
+     <div class="score-text">
+      Skor: <span id="bab3-score">0</span> / 10
+     </div>
+    </div>
+    <div id="bab3-quiz-container"></div>
    </div><!-- BAB 4: AL-FASHLU -->
    <div id="bab4" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #c8e6c9, #a5d6a7);">
-     <div class="chapter-title" style="color: #1b5e20;">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(248,187,208,0.98), rgba(244,143,177,0.95));">
+     <div class="chapter-title" style="color: #880e4f;">
       📘 BAB 4
      </div>
-     <div class="chapter-subtitle" style="color: #2e7d32;">
+     <div class="chapter-subtitle" style="color: #ad1457;">
       اَلْفَصْلُ (Kelas)
      </div>
     </div>
@@ -859,12 +975,12 @@
     </div>
    </div><!-- BAB 5: KELUARGAKU -->
    <div id="bab5" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #fff9c4, #fff59d);">
-     <div class="chapter-title" style="color: #f57f17;">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(165,214,167,0.98), rgba(129,199,132,0.95));">
+     <div class="chapter-title" style="color: #1b5e20;">
       📘 BAB 5
      </div>
-     <div class="chapter-subtitle" style="color: #f9a825;">
-      Keluargaku
+     <div class="chapter-subtitle" style="color: #2e7d32;">
+      اسراتي (Keluargaku)
      </div>
     </div>
     <div class="menu-grid"><button class="menu-button" onclick="showPage('bab5-mufrodat-intro')">
@@ -889,7 +1005,7 @@
     </div>
    </div><!-- BAB 6: MADRASATI -->
    <div id="bab6" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
-    <div class="chapter-header" style="background: linear-gradient(135deg, #ffcdd2, #ef9a9a);">
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(255,205,210,0.98), rgba(239,154,154,0.95));">
      <div class="chapter-title" style="color: #b71c1c;">
       📘 BAB 6
      </div>
@@ -917,6 +1033,489 @@
        Latihan Soal
       </div></button>
     </div>
+   </div><!-- BAB 4: Mufrodat Intro -->
+   <div id="bab4-mufrodat-intro" class="page"><button class="back-button" onclick="showPage('bab4')">←</button>
+    <div class="content-card">
+     <h3>📚 Mufrodat</h3>
+     <p class="instruction-text">Selamat datang di pembelajaran kosakata Bahasa Arab!<br><br>
+       Di halaman berikutnya, kamu akan mempelajari 10 kosakata penting tentang kelas (الفصل).<br><br>
+       Perhatikan gambar dan artinya dengan baik ya! 😊</p><button class="next-button" onclick="showPage('bab4-mufrodat')">Lanjut ke Mufrodat →</button>
+    </div>
+   </div><!-- BAB 4: Mufrodat -->
+   <div id="bab4-mufrodat" class="page"><button class="back-button" onclick="showPage('bab4-mufrodat-intro')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(248,187,208,0.98), rgba(244,143,177,0.95));">
+     <div class="chapter-title" style="color: #880e4f;">
+      📚 Mufrodat - الفصل
+     </div>
+    </div>
+    <div class="vocab-grid">
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🎓
+      </div>
+      <div class="vocab-arabic">
+       اَلْفَصْلُ
+      </div>
+      <div class="vocab-meaning">
+       Kelas
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👨‍🏫
+      </div>
+      <div class="vocab-arabic">
+       اَلْمُدَرِّسُ
+      </div>
+      <div class="vocab-meaning">
+       Guru
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👨‍🎓
+      </div>
+      <div class="vocab-arabic">
+       اَلتِّلْمِيْذُ
+      </div>
+      <div class="vocab-meaning">
+       Siswa
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       📖
+      </div>
+      <div class="vocab-arabic">
+       اَلْكِتَابُ
+      </div>
+      <div class="vocab-meaning">
+       Buku
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       ✏️
+      </div>
+      <div class="vocab-arabic">
+       اَلْقَلَمُ
+      </div>
+      <div class="vocab-meaning">
+       Pena
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       📝
+      </div>
+      <div class="vocab-arabic">
+       اَلدَّفْتَرُ
+      </div>
+      <div class="vocab-meaning">
+       Buku Tulis
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🎒
+      </div>
+      <div class="vocab-arabic">
+       اَلْحَقِيْبَةُ
+      </div>
+      <div class="vocab-meaning">
+       Tas
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       ⏰
+      </div>
+      <div class="vocab-arabic">
+       اَلسَّاعَةُ
+      </div>
+      <div class="vocab-meaning">
+       Jam
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🗺️
+      </div>
+      <div class="vocab-arabic">
+       اَلْخَرِيْطَةُ
+      </div>
+      <div class="vocab-meaning">
+       Peta
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🖊️
+      </div>
+      <div class="vocab-arabic">
+       اَلْمِمْحَاةُ
+      </div>
+      <div class="vocab-meaning">
+       Penghapus
+      </div>
+     </div>
+    </div>
+   </div><!-- BAB 4: Qira'ah -->
+   <div id="bab4-qiraah" class="page"><button class="back-button" onclick="showPage('bab4')">←</button>
+    <div class="content-card">
+     <h3>📖 Qira'ah</h3>
+     <p class="instruction-text">Silakan dengarkan audio bacaan tentang الفصل (Kelas) dengan seksama.<br>
+       Perhatikan pengucapan dan makna setiap kalimat.</p>
+     <div class="audio-placeholder">
+      <div class="audio-icon">
+       🔊
+      </div>
+      <p class="placeholder-text" style="color: #1e5ba8;">Audio Player</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Tekan play untuk mendengarkan</p>
+     </div>
+     <div class="image-placeholder">
+      <div class="image-icon">
+       🖼️
+      </div>
+      <p class="placeholder-text" style="color: #f57f17;">Ilustrasi Kelas</p>
+      <p class="placeholder-subtext" style="color: #fbc02d;">Gambar akan ditampilkan di sini</p>
+     </div>
+    </div>
+   </div><!-- BAB 4: Latihan -->
+   <div id="bab4-latihan" class="page"><button class="back-button" onclick="showPage('bab4')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(248,187,208,0.98), rgba(244,143,177,0.95));">
+     <div class="chapter-title" style="color: #880e4f;">
+      ✏️ Latihan Soal BAB 4
+     </div>
+    </div>
+    <div class="score-display">
+     <div class="score-text">
+      Skor: <span id="bab4-score">0</span> / 10
+     </div>
+    </div>
+    <div id="bab4-quiz-container"></div>
+   </div><!-- BAB 5: Mufrodat Intro -->
+   <div id="bab5-mufrodat-intro" class="page"><button class="back-button" onclick="showPage('bab5')">←</button>
+    <div class="content-card">
+     <h3>📚 Mufrodat</h3>
+     <p class="instruction-text">Selamat datang di pembelajaran kosakata Bahasa Arab!<br><br>
+       Di halaman berikutnya, kamu akan mempelajari 10 kosakata penting tentang keluarga.<br><br>
+       Perhatikan gambar dan artinya dengan baik ya! 😊</p><button class="next-button" onclick="showPage('bab5-mufrodat')">Lanjut ke Mufrodat →</button>
+    </div>
+   </div><!-- BAB 5: Mufrodat -->
+   <div id="bab5-mufrodat" class="page"><button class="back-button" onclick="showPage('bab5-mufrodat-intro')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(165,214,167,0.98), rgba(129,199,132,0.95));">
+     <div class="chapter-title" style="color: #1b5e20;">
+      📚 Mufrodat - اسراتي
+     </div>
+    </div>
+    <div class="vocab-grid">
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👨‍👩‍👧‍👦
+      </div>
+      <div class="vocab-arabic">
+       اَلْأُسْرَةُ
+      </div>
+      <div class="vocab-meaning">
+       Keluarga
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👨
+      </div>
+      <div class="vocab-arabic">
+       اَلْأَبُ
+      </div>
+      <div class="vocab-meaning">
+       Ayah
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👩
+      </div>
+      <div class="vocab-arabic">
+       اَلْأُمُّ
+      </div>
+      <div class="vocab-meaning">
+       Ibu
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👦
+      </div>
+      <div class="vocab-arabic">
+       اَلْأَخُ
+      </div>
+      <div class="vocab-meaning">
+       Saudara Laki-laki
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👧
+      </div>
+      <div class="vocab-arabic">
+       اَلْأُخْتُ
+      </div>
+      <div class="vocab-meaning">
+       Saudara Perempuan
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👴
+      </div>
+      <div class="vocab-arabic">
+       اَلْجَدُّ
+      </div>
+      <div class="vocab-meaning">
+       Kakek
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👵
+      </div>
+      <div class="vocab-arabic">
+       اَلْجَدَّةُ
+      </div>
+      <div class="vocab-meaning">
+       Nenek
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👶
+      </div>
+      <div class="vocab-arabic">
+       اَلإِبْنُ
+      </div>
+      <div class="vocab-meaning">
+       Anak Laki-laki
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👧
+      </div>
+      <div class="vocab-arabic">
+       اَلْبِنْتُ
+      </div>
+      <div class="vocab-meaning">
+       Anak Perempuan
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       👨‍👩‍👧
+      </div>
+      <div class="vocab-arabic">
+       اَلْوَالِدَانِ
+      </div>
+      <div class="vocab-meaning">
+       Orang Tua
+      </div>
+     </div>
+    </div>
+   </div><!-- BAB 5: Qira'ah -->
+   <div id="bab5-qiraah" class="page"><button class="back-button" onclick="showPage('bab5')">←</button>
+    <div class="content-card">
+     <h3>📖 Qira'ah</h3>
+     <p class="instruction-text">Silakan dengarkan audio bacaan tentang Keluarga dengan seksama.<br>
+       Perhatikan pengucapan dan makna setiap kalimat.</p>
+     <div class="audio-placeholder">
+      <div class="audio-icon">
+       🔊
+      </div>
+      <p class="placeholder-text" style="color: #1e5ba8;">Audio Player</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Tekan play untuk mendengarkan</p>
+     </div>
+     <div class="image-placeholder">
+      <div class="image-icon">
+       🖼️
+      </div>
+      <p class="placeholder-text" style="color: #f57f17;">Ilustrasi Keluarga</p>
+      <p class="placeholder-subtext" style="color: #fbc02d;">Gambar akan ditampilkan di sini</p>
+     </div>
+    </div>
+   </div><!-- BAB 5: Latihan -->
+   <div id="bab5-latihan" class="page"><button class="back-button" onclick="showPage('bab5')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(165,214,167,0.98), rgba(129,199,132,0.95));">
+     <div class="chapter-title" style="color: #1b5e20;">
+      ✏️ Latihan Soal BAB 5
+     </div>
+    </div>
+    <div class="score-display">
+     <div class="score-text">
+      Skor: <span id="bab5-score">0</span> / 10
+     </div>
+    </div>
+    <div id="bab5-quiz-container"></div>
+   </div><!-- BAB 6: Mufrodat Intro -->
+   <div id="bab6-mufrodat-intro" class="page"><button class="back-button" onclick="showPage('bab6')">←</button>
+    <div class="content-card">
+     <h3>📚 Mufrodat</h3>
+     <p class="instruction-text">Selamat datang di pembelajaran kosakata Bahasa Arab!<br><br>
+       Di halaman berikutnya, kamu akan mempelajari 10 kosakata penting tentang sekolah (مدرستي).<br><br>
+       Perhatikan gambar dan artinya dengan baik ya! 😊</p><button class="next-button" onclick="showPage('bab6-mufrodat')">Lanjut ke Mufrodat →</button>
+    </div>
+   </div><!-- BAB 6: Mufrodat -->
+   <div id="bab6-mufrodat" class="page"><button class="back-button" onclick="showPage('bab6-mufrodat-intro')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(255,205,210,0.98), rgba(239,154,154,0.95));">
+     <div class="chapter-title" style="color: #b71c1c;">
+      📚 Mufrodat - مدرستي
+     </div>
+    </div>
+    <div class="vocab-grid">
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🏫
+      </div>
+      <div class="vocab-arabic">
+       اَلْمَدْرَسَةُ
+      </div>
+      <div class="vocab-meaning">
+       Sekolah
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       📚
+      </div>
+      <div class="vocab-arabic">
+       اَلْمَكْتَبَةُ
+      </div>
+      <div class="vocab-meaning">
+       Perpustakaan
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🧪
+      </div>
+      <div class="vocab-arabic">
+       اَلْمَعْمَلُ
+      </div>
+      <div class="vocab-meaning">
+       Laboratorium
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🏃
+      </div>
+      <div class="vocab-arabic">
+       اَلْمَلْعَبُ
+      </div>
+      <div class="vocab-meaning">
+       Lapangan
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🍽️
+      </div>
+      <div class="vocab-arabic">
+       اَلْمَقْصَفُ
+      </div>
+      <div class="vocab-meaning">
+       Kantin
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🖥️
+      </div>
+      <div class="vocab-arabic">
+       اَلْحَاسُوْبُ
+      </div>
+      <div class="vocab-meaning">
+       Komputer
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🚪
+      </div>
+      <div class="vocab-arabic">
+       اَلْبَوَّابَةُ
+      </div>
+      <div class="vocab-meaning">
+       Gerbang
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🎨
+      </div>
+      <div class="vocab-arabic">
+       اَلْفَنُّ
+      </div>
+      <div class="vocab-meaning">
+       Seni
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       ⚽
+      </div>
+      <div class="vocab-arabic">
+       اَلرِّيَاضَةُ
+      </div>
+      <div class="vocab-meaning">
+       Olahraga
+      </div>
+     </div>
+     <div class="vocab-item">
+      <div class="vocab-icon">
+       🕌
+      </div>
+      <div class="vocab-arabic">
+       اَلْمُصَلَّى
+      </div>
+      <div class="vocab-meaning">
+       Mushola
+      </div>
+     </div>
+    </div>
+   </div><!-- BAB 6: Qira'ah -->
+   <div id="bab6-qiraah" class="page"><button class="back-button" onclick="showPage('bab6')">←</button>
+    <div class="content-card">
+     <h3>📖 Qira'ah</h3>
+     <p class="instruction-text">Silakan dengarkan audio bacaan tentang مدرستي (Sekolahku) dengan seksama.<br>
+       Perhatikan pengucapan dan makna setiap kalimat.</p>
+     <div class="audio-placeholder">
+      <div class="audio-icon">
+       🔊
+      </div>
+      <p class="placeholder-text" style="color: #1e5ba8;">Audio Player</p>
+      <p class="placeholder-subtext" style="color: #3e8ed0;">Tekan play untuk mendengarkan</p>
+     </div>
+     <div class="image-placeholder">
+      <div class="image-icon">
+       🖼️
+      </div>
+      <p class="placeholder-text" style="color: #f57f17;">Ilustrasi Sekolah</p>
+      <p class="placeholder-subtext" style="color: #fbc02d;">Gambar akan ditampilkan di sini</p>
+     </div>
+    </div>
+   </div><!-- BAB 6: Latihan -->
+   <div id="bab6-latihan" class="page"><button class="back-button" onclick="showPage('bab6')">←</button>
+    <div class="chapter-header" style="background: linear-gradient(135deg, rgba(255,205,210,0.98), rgba(239,154,154,0.95));">
+     <div class="chapter-title" style="color: #b71c1c;">
+      ✏️ Latihan Soal BAB 6
+     </div>
+    </div>
+    <div class="score-display">
+     <div class="score-text">
+      Skor: <span id="bab6-score">0</span> / 10
+     </div>
+    </div>
+    <div id="bab6-quiz-container"></div>
    </div><!-- Halaman Evaluasi -->
    <div id="evaluasi" class="page"><button class="back-button" onclick="showPage('main-menu')">←</button>
     <div class="chapter-header">
@@ -932,19 +1531,19 @@
      <p class="instruction-text">Evaluasi ini mengukur pemahaman kamu terhadap semua materi BAB 1-6.<br><br>
        Pilih jenis soal yang ingin kamu kerjakan:</p>
     </div>
-    <div class="menu-grid"><button class="menu-button" onclick="alert('Soal Pilihan Ganda akan dimulai!')">
+    <div class="menu-grid"><button class="menu-button" onclick="showEvaluationAlert('Pilihan Ganda')">
       <div class="menu-icon">
-       ✓
+       ☑️
       </div>
       <div class="menu-text">
        Soal Pilihan Ganda
-      </div></button> <button class="menu-button" onclick="alert('Soal Essay akan dimulai!')">
+      </div></button> <button class="menu-button" onclick="showEvaluationAlert('Essay')">
       <div class="menu-icon">
        ✍️
       </div>
       <div class="menu-text">
        Essay
-      </div></button> <button class="menu-button" onclick="showPage('logout')" style="grid-column: span 2; background: linear-gradient(135deg, #ffcdd2, #ef9a9a);">
+      </div></button> <button class="menu-button" onclick="showPage('logout')" style="grid-column: span 2; background: linear-gradient(135deg, rgba(255,205,210,0.98), rgba(239,154,154,0.95));">
       <div class="menu-icon">
        🚪
       </div>
@@ -974,7 +1573,7 @@
         const defaultConfig = {
             app_title: "📚 Media Pembelajaran Bahasa Arab",
             class_level: "Kelas 7 MTs",
-            team_label: "Tim Pengembang:",
+            team_title: "Tim Pengembang:",
             developer_names: "Ahmad Riyanto, Sherly Eka Novita Sari,\nPutri Rahma Su'adah",
             start_button: "MULAI BELAJAR",
             back_button: "Kembali",
@@ -983,7 +1582,6 @@
 
         let config = { ...defaultConfig };
 
-        // Quiz data untuk BAB 1
         const bab1Questions = [
             {
                 question: "1. Apa arti dari اَلْبَيْتُ ?",
@@ -1012,7 +1610,6 @@
             }
         ];
 
-        // Quiz data untuk BAB 2
         const bab2Questions = [
             {
                 question: "1. Isim Isyarah untuk menunjuk 'ini' (laki-laki) adalah...",
@@ -1041,8 +1638,124 @@
             }
         ];
 
+        const bab3Questions = [
+            {
+                question: "1. Huruf Jar yang artinya 'dari' adalah...",
+                options: ["مِنْ", "إِلَى", "فِي", "عَلَى"],
+                correct: 0
+            },
+            {
+                question: "2. فِي الْبَيْتِ artinya adalah...",
+                options: ["Dari rumah", "Ke rumah", "Di rumah", "Atas rumah"],
+                correct: 2
+            },
+            {
+                question: "3. Dalam kalimat Mubtada Khobar, Mubtada adalah...",
+                options: ["Predikat", "Subjek", "Objek", "Keterangan"],
+                correct: 1
+            },
+            {
+                question: "4. Huruf Jar بِ artinya adalah...",
+                options: ["Dari", "Ke", "Dengan", "Untuk"],
+                correct: 2
+            },
+            {
+                question: "5. اَلْبَيْتُ جَمِيْلٌ - Kata جَمِيْلٌ adalah...",
+                options: ["Mubtada", "Khobar", "Huruf Jar", "Isim Isyarah"],
+                correct: 1
+            }
+        ];
+
+        const bab4Questions = [
+            {
+                question: "1. Apa arti dari اَلْفَصْلُ ?",
+                options: ["Rumah", "Kelas", "Sekolah", "Perpustakaan"],
+                correct: 1
+            },
+            {
+                question: "2. اَلْمُدَرِّسُ artinya adalah...",
+                options: ["Siswa", "Guru", "Kepala Sekolah", "Penjaga"],
+                correct: 1
+            },
+            {
+                question: "3. Bahasa Arab dari 'Buku' adalah...",
+                options: ["اَلْقَلَمُ", "اَلدَّفْتَرُ", "اَلْكِتَابُ", "اَلْحَقِيْبَةُ"],
+                correct: 2
+            },
+            {
+                question: "4. اَلْحَقِيْبَةُ artinya adalah...",
+                options: ["Pena", "Buku tulis", "Tas", "Penghapus"],
+                correct: 2
+            },
+            {
+                question: "5. Kata اَلسَّاعَةُ dalam Bahasa Indonesia adalah...",
+                options: ["Peta", "Jam", "Papan tulis", "Jendela"],
+                correct: 1
+            }
+        ];
+
+        const bab5Questions = [
+            {
+                question: "1. Apa arti dari اَلْأُسْرَةُ ?",
+                options: ["Rumah", "Keluarga", "Teman", "Tetangga"],
+                correct: 1
+            },
+            {
+                question: "2. اَلْأَبُ artinya adalah...",
+                options: ["Ibu", "Ayah", "Kakak", "Adik"],
+                correct: 1
+            },
+            {
+                question: "3. Bahasa Arab dari 'Nenek' adalah...",
+                options: ["اَلْجَدُّ", "اَلْجَدَّةُ", "اَلْأُمُّ", "اَلْأُخْتُ"],
+                correct: 1
+            },
+            {
+                question: "4. اَلْأَخُ artinya adalah...",
+                options: ["Saudara Perempuan", "Saudara Laki-laki", "Anak", "Kakek"],
+                correct: 1
+            },
+            {
+                question: "5. Kata اَلْوَالِدَانِ artinya adalah...",
+                options: ["Kakek Nenek", "Orang Tua", "Anak-anak", "Keluarga"],
+                correct: 1
+            }
+        ];
+
+        const bab6Questions = [
+            {
+                question: "1. Apa arti dari اَلْمَدْرَسَةُ ?",
+                options: ["Kelas", "Rumah", "Sekolah", "Kantin"],
+                correct: 2
+            },
+            {
+                question: "2. اَلْمَكْتَبَةُ artinya adalah...",
+                options: ["Perpustakaan", "Laboratorium", "Kantin", "Lapangan"],
+                correct: 0
+            },
+            {
+                question: "3. Bahasa Arab dari 'Lapangan' adalah...",
+                options: ["اَلْمَعْمَلُ", "اَلْمَقْصَفُ", "اَلْمَلْعَبُ", "اَلْمُصَلَّى"],
+                correct: 2
+            },
+            {
+                question: "4. اَلْحَاسُوْبُ artinya adalah...",
+                options: ["Buku", "Pena", "Komputer", "Tas"],
+                correct: 2
+            },
+            {
+                question: "5. Kata اَلْمُصَلَّى dalam Bahasa Indonesia adalah...",
+                options: ["Masjid", "Mushola", "Kelas", "Kantor"],
+                correct: 1
+            }
+        ];
+
         let currentBab1Score = 0;
         let currentBab2Score = 0;
+        let currentBab3Score = 0;
+        let currentBab4Score = 0;
+        let currentBab5Score = 0;
+        let currentBab6Score = 0;
 
         function showPage(pageId) {
             const pages = document.querySelectorAll('.page');
@@ -1057,6 +1770,14 @@
                     initQuiz('bab1', bab1Questions);
                 } else if (pageId === 'bab2-latihan') {
                     initQuiz('bab2', bab2Questions);
+                } else if (pageId === 'bab3-latihan') {
+                    initQuiz('bab3', bab3Questions);
+                } else if (pageId === 'bab4-latihan') {
+                    initQuiz('bab4', bab4Questions);
+                } else if (pageId === 'bab5-latihan') {
+                    initQuiz('bab5', bab5Questions);
+                } else if (pageId === 'bab6-latihan') {
+                    initQuiz('bab6', bab6Questions);
                 }
             }
         }
@@ -1067,8 +1788,16 @@
             
             if (bab === 'bab1') {
                 currentBab1Score = 0;
-            } else {
+            } else if (bab === 'bab2') {
                 currentBab2Score = 0;
+            } else if (bab === 'bab3') {
+                currentBab3Score = 0;
+            } else if (bab === 'bab4') {
+                currentBab4Score = 0;
+            } else if (bab === 'bab5') {
+                currentBab5Score = 0;
+            } else if (bab === 'bab6') {
+                currentBab6Score = 0;
             }
             scoreElement.textContent = '0';
             
@@ -1088,7 +1817,14 @@
         }
 
         function checkAnswer(questionIndex, selectedOption, bab) {
-            const questions = bab === 'bab1' ? bab1Questions : bab2Questions;
+            let questions;
+            if (bab === 'bab1') questions = bab1Questions;
+            else if (bab === 'bab2') questions = bab2Questions;
+            else if (bab === 'bab3') questions = bab3Questions;
+            else if (bab === 'bab4') questions = bab4Questions;
+            else if (bab === 'bab5') questions = bab5Questions;
+            else if (bab === 'bab6') questions = bab6Questions;
+            
             const container = document.getElementById(`${bab}-quiz-container`);
             const questionDiv = container.children[questionIndex];
             const buttons = questionDiv.querySelectorAll('.option-button');
@@ -1107,11 +1843,87 @@
                 if (bab === 'bab1') {
                     currentBab1Score += 2;
                     scoreElement.textContent = currentBab1Score;
-                } else {
+                } else if (bab === 'bab2') {
                     currentBab2Score += 2;
                     scoreElement.textContent = currentBab2Score;
+                } else if (bab === 'bab3') {
+                    currentBab3Score += 2;
+                    scoreElement.textContent = currentBab3Score;
+                } else if (bab === 'bab4') {
+                    currentBab4Score += 2;
+                    scoreElement.textContent = currentBab4Score;
+                } else if (bab === 'bab5') {
+                    currentBab5Score += 2;
+                    scoreElement.textContent = currentBab5Score;
+                } else if (bab === 'bab6') {
+                    currentBab6Score += 2;
+                    scoreElement.textContent = currentBab6Score;
                 }
             }
+        }
+
+        function showGameAlert() {
+            showCustomMessage('🎮 Game Pembelajaran', 'Game akan segera dimulai! Bersiaplah untuk mencocokkan kosakata Arab dengan artinya. Semangat!');
+        }
+
+        function showEvaluationAlert(type) {
+            showCustomMessage('📝 Evaluasi ' + type, 'Soal ' + type + ' akan segera dimulai. Pastikan kamu sudah siap untuk mengerjakan evaluasi!');
+        }
+
+        function showCustomMessage(title, message) {
+            const existingModal = document.getElementById('custom-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            const modal = document.createElement('div');
+            modal.id = 'custom-modal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1000;
+                padding: 20px;
+            `;
+
+            const modalContent = document.createElement('div');
+            modalContent.style.cssText = `
+                background: linear-gradient(135deg, #fff 0%, #e3f2fd 100%);
+                border-radius: 25px;
+                padding: 35px;
+                max-width: 400px;
+                width: 100%;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+                text-align: center;
+                border: 3px solid #ffd700;
+            `;
+
+            modalContent.innerHTML = `
+                <h3 style="color: #0a2463; font-size: 24px; margin-bottom: 20px; font-weight: 900;">${title}</h3>
+                <p style="color: #1e5ba8; font-size: 17px; line-height: 1.8; margin-bottom: 30px; font-weight: 600;">${message}</p>
+                <button onclick="document.getElementById('custom-modal').remove()" 
+                    style="background: linear-gradient(135deg, #ffd700, #ffed4e); 
+                           border: none; 
+                           border-radius: 50px; 
+                           padding: 15px 40px; 
+                           color: #0a2463; 
+                           font-size: 18px; 
+                           font-weight: 900; 
+                           cursor: pointer; 
+                           box-shadow: 0 6px 20px rgba(255,215,0,0.5);
+                           transition: all 0.3s ease;">
+                    OK
+                </button>
+            `;
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
         }
 
         async function onConfigChange(newConfig) {
@@ -1124,7 +1936,7 @@
 
             if (appTitle) appTitle.textContent = newConfig.app_title || defaultConfig.app_title;
             if (classLevel) classLevel.textContent = newConfig.class_level || defaultConfig.class_level;
-            if (teamLabel) teamLabel.textContent = newConfig.team_label || defaultConfig.team_label;
+            if (teamLabel) teamLabel.textContent = newConfig.team_title || defaultConfig.team_title;
             if (developerNames) {
                 const names = newConfig.developer_names || defaultConfig.developer_names;
                 developerNames.innerHTML = names.replace(/\n/g, '<br>');
@@ -1146,7 +1958,7 @@
                 mapToEditPanelValues: (config) => new Map([
                     ["app_title", config.app_title || defaultConfig.app_title],
                     ["class_level", config.class_level || defaultConfig.class_level],
-                    ["team_title", config.team_label || defaultConfig.team_label],
+                    ["team_title", config.team_title || defaultConfig.team_title],
                     ["developer_names", config.developer_names || defaultConfig.developer_names],
                     ["start_button", config.start_button || defaultConfig.start_button],
                     ["back_button", config.back_button || defaultConfig.back_button],
@@ -1158,5 +1970,5 @@
             onConfigChange(config);
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a27131695aa1d47',t:'MTc2MzgwMDMyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a27801b16cb7d50',t:'MTc2MzgwNDc5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
